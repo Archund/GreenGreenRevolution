@@ -1,0 +1,17 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Dead_Tree.obj-181e0a47a07ee9a1a6a83fe7773fddfe.mesh"
+
+[deps]
+
+files=[ "res://.import/Dead_Tree.obj-181e0a47a07ee9a1a6a83fe7773fddfe.mesh" ]
+
+source_file="res://misc/dead-tree/source/Dead_Tree.obj"
+dest_files=[ "res://.import/Dead_Tree.obj-181e0a47a07ee9a1a6a83fe7773fddfe.mesh", "res://.import/Dead_Tree.obj-181e0a47a07ee9a1a6a83fe7773fddfe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )

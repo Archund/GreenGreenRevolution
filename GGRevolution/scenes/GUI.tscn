@@ -1,0 +1,266 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
+[ext_resource path="res://599.png" type="Texture" id=2]
+[ext_resource path="res://assets/BMSPA___.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://bg.png" type="Texture" id=4]
+[ext_resource path="res://2.png" type="Texture" id=5]
+[ext_resource path="res://recycle.png" type="Texture" id=6]
+[ext_resource path="res://snapbutton.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 55
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 28
+use_mipmaps = true
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Control" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+
+[node name="Container" type="Container" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="background" type="ColorRect" parent="Container" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1025.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.874603, 0.894098, 0.960938, 1 )
+_sections_unfolded = [ "Material" ]
+
+[node name="599" type="Sprite" parent="Container/background" index="0"]
+
+position = Vector2( 511.945, 301.339 )
+scale = Vector2( 0.305838, 0.1786 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="Container" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -8.0
+margin_top = 14.0
+margin_right = 1037.0
+margin_bottom = 81.0
+rect_pivot_offset = Vector2( 300, 30 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0634022, 0.203125, 0.0476074, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Green Green Revolution"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Label2" type="Label" parent="Container/Title" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 3.0
+margin_top = 9.0
+margin_right = 1048.0
+margin_bottom = 76.0
+rect_pivot_offset = Vector2( 300, 30 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.80632, 0.945313, 0.136627, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Green Green Revolution"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Label2" type="Label" parent="Container" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -8.0
+margin_top = 17.0
+margin_right = 1037.0
+margin_bottom = 84.0
+rect_pivot_offset = Vector2( 300, 30 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0644531, 0.375, 0.178482, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Green Green Revolution"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="LoginMenu" type="Sprite" parent="." index="1"]
+
+position = Vector2( 514.342, 332.041 )
+rotation = 0.00094476
+scale = Vector2( 0.431726, 0.432473 )
+texture = ExtResource( 4 )
+
+[node name="Username" type="Sprite" parent="LoginMenu" index="0"]
+
+position = Vector2( 8.86719, -202.698 )
+rotation = 0.000148543
+scale = Vector2( 0.916176, 2.61762 )
+texture = ExtResource( 5 )
+
+[node name="Password" type="Sprite" parent="LoginMenu" index="1"]
+
+position = Vector2( 13.943, 18.5623 )
+rotation = 0.00769143
+scale = Vector2( 0.916176, 2.61762 )
+texture = ExtResource( 5 )
+
+[node name="recycle" type="Sprite" parent="LoginMenu" index="2"]
+
+position = Vector2( -433.636, 267.94 )
+rotation = -0.000943128
+scale = Vector2( 0.390259, 0.41326 )
+texture = ExtResource( 6 )
+
+[node name="LineEdit" type="LineEdit" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 366.0
+margin_top = 219.0
+margin_right = 669.0
+margin_bottom = 265.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+text = "USERNAME"
+align = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="LineEdit2" type="LineEdit" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 366.0
+margin_top = 315.0
+margin_right = 669.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+text = "PASSWORD"
+align = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="snapbutton" type="TextureButton" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 372.0
+margin_top = 255.0
+margin_right = 1012.0
+margin_bottom = 655.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 7 )
+
+

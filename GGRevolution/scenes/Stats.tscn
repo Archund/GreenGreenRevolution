@@ -1,0 +1,338 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
+[ext_resource path="res://599.png" type="Texture" id=2]
+[ext_resource path="res://assets/gradient.shader" type="Shader" id=3]
+[ext_resource path="res://Inventory Stats Empty.png" type="Texture" id=4]
+[ext_resource path="res://Inventory Cell.png" type="Texture" id=5]
+[ext_resource path="res://tree pink.png" type="Texture" id=6]
+[ext_resource path="res://recycle.png" type="Texture" id=7]
+[ext_resource path="res://trash.png" type="Texture" id=8]
+[ext_resource path="res://bottle.png" type="Texture" id=9]
+[ext_resource path="res://car.png" type="Texture" id=10]
+[ext_resource path="res://snow  globe.png" type="Texture" id=11]
+[ext_resource path="res://glass.png" type="Texture" id=12]
+[ext_resource path="res://assets/BMSPA___.TTF" type="DynamicFontData" id=13]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 28
+use_mipmaps = true
+use_filter = false
+font_data = ExtResource( 13 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 50
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 13 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
+
+[node name="Control" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Container" type="Container" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="599" type="Sprite" parent="Container" index="0"]
+
+position = Vector2( 514.243, 301.711 )
+scale = Vector2( 0.307836, 0.181087 )
+texture = ExtResource( 2 )
+
+[node name="Panel" type="ColorRect" parent="Container" index="1"]
+
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1025.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.156863, 0.733333, 0.611765, 1 )
+_sections_unfolded = [ "Material" ]
+
+[node name="Inventory Stats Empty" type="Sprite" parent="." index="1"]
+
+position = Vector2( 522.947, 315.156 )
+scale = Vector2( 3.11956, 1.97813 )
+texture = ExtResource( 4 )
+
+[node name="Inventory Cell" type="Sprite" parent="Inventory Stats Empty" index="0"]
+
+position = Vector2( -31.077, -32.6776 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="Inventory Cell3" type="Sprite" parent="Inventory Stats Empty" index="1"]
+
+position = Vector2( 35.649, 33.7419 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="Inventory Cell4" type="Sprite" parent="Inventory Stats Empty" index="2"]
+
+position = Vector2( 35.6489, -32.6521 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="Inventory Cell5" type="Sprite" parent="Inventory Stats Empty" index="3"]
+
+position = Vector2( 101.684, -32.068 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="Inventory Cell6" type="Sprite" parent="Inventory Stats Empty" index="4"]
+
+position = Vector2( 102.342, 33.7419 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="Inventory Cell2" type="Sprite" parent="Inventory Stats Empty" index="5"]
+
+position = Vector2( -31.077, 33.6908 )
+scale = Vector2( 2.08292, 2.07725 )
+texture = ExtResource( 5 )
+
+[node name="tree pink" type="Sprite" parent="Inventory Stats Empty" index="6"]
+
+position = Vector2( 102.437, -34.9019 )
+scale = Vector2( 0.0316232, 0.062612 )
+texture = ExtResource( 6 )
+
+[node name="recycle2" type="Sprite" parent="Inventory Stats Empty" index="7"]
+
+position = Vector2( -127.22, 11.7166 )
+scale = Vector2( 0.0205914, 0.034217 )
+texture = ExtResource( 7 )
+
+[node name="trash" type="Sprite" parent="Inventory Stats Empty" index="8"]
+
+position = Vector2( -127.725, 41.608 )
+scale = Vector2( 0.0205914, 0.034217 )
+texture = ExtResource( 8 )
+
+[node name="bottle" type="Sprite" parent="Inventory Stats Empty" index="9"]
+
+position = Vector2( -122.839, -23.5268 )
+scale = Vector2( 0.0302308, 0.033213 )
+texture = ExtResource( 9 )
+
+[node name="car" type="Sprite" parent="Inventory Stats Empty" index="10"]
+
+position = Vector2( -30.9003, -32.2838 )
+scale = Vector2( 0.0856599, 0.190816 )
+texture = ExtResource( 10 )
+
+[node name="snow  globe" type="Sprite" parent="Inventory Stats Empty" index="11"]
+
+position = Vector2( 36.7532, -32.8076 )
+scale = Vector2( 0.0262163, 0.0333936 )
+texture = ExtResource( 11 )
+
+[node name="glass" type="Sprite" parent="Inventory Stats Empty" index="12"]
+
+position = Vector2( -131.2, -26.1722 )
+scale = Vector2( 0.0284651, 0.0416 )
+texture = ExtResource( 12 )
+
+[node name="LineEdit7" type="LineEdit" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 107.0
+margin_top = 206.0
+margin_right = 307.0
+margin_bottom = 245.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="LineEdit4" type="LineEdit" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 159.0
+margin_top = 316.0
+margin_right = 313.0
+margin_bottom = 355.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="LineEdit5" type="LineEdit" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 158.0
+margin_top = 381.0
+margin_right = 312.0
+margin_bottom = 420.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="LineEdit6" type="LineEdit" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 158.0
+margin_top = 255.0
+margin_right = 312.0
+margin_bottom = 294.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Label2" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 76.0
+margin_top = 206.0
+margin_right = 346.0
+margin_bottom = 267.0
+rect_pivot_offset = Vector2( 300, 30 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+text = "STATS"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts", "custom_styles" ]
+
+[node name="Label3" type="Label" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 316.0
+margin_top = 85.0
+margin_right = 763.0
+margin_bottom = 146.0
+rect_pivot_offset = Vector2( 300, 30 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.0234375, 0.022522, 0.022522, 1 )
+custom_colors/font_color_shadow = Color( 0.0234375, 0.022522, 0.022522, 1 )
+text = "COLLECTION"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "BBCode", "custom_colors", "custom_fonts", "custom_styles" ]
+
+
